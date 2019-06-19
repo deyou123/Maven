@@ -10,3 +10,7 @@
 　　</mirror>
 
 ```
+## 配置本地仓库
+```
+<localRepository>F:\IT_zhengqing\maven\repository-zhengqing</localRepository>
+```
