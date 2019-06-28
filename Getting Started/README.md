@@ -38,8 +38,8 @@
 # 3. Change the location of the Maven repository 
 
 
-
-## 配置阿里云镜像
+maven  配置
+# 配置阿里云镜像
 ```
 <mirror>
 　　　　<id>alimaven</id>
@@ -49,7 +49,31 @@
 　　</mirror>
 
 ```
-## 配置本地仓库
+# 配置本地仓库
 ```
 <localRepository>F:\IT_zhengqing\maven\repository-zhengqing</localRepository>
+```
+# 配置代理服务
+```
+<!-- proxies
+   | This is a list of proxies which can be used on this machine to connect to the network.
+   | Unless otherwise specified (by system property or command-line switch), the first proxy
+   | specification in this list marked as active will be used.
+   |-->
+  <proxies>
+    <!-- proxy
+     | Specification for one proxy, to be used in connecting to the network.
+     |
+    <proxy>
+      <id>optional</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <username>proxyuser</username>
+      <password>proxypass</password>
+      <host>proxy.host.net</host>
+      <port>80</port>
+      <nonProxyHosts>local.net|some.host.com</nonProxyHosts>
+    </proxy>
+    -->
+  </proxies>
 ```
