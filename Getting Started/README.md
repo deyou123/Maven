@@ -2,8 +2,9 @@
 1. Open a command prompt and change the directory to the folder in which you want to create your first Maven project.
 
 2. Run the following command:
-
+```
     mvn archetype:generate -DgroupId=com.dan.mvn -DartifactId=Simple-project -DarchetpyeArtifactId=Maven-archetype-quickstart -DinteractiveMode=false
+```
 3. you will see Maven downloading a bunch of files
 
 4. Then it will start generating sources
@@ -54,6 +55,13 @@ maven  配置
 <localRepository>F:\IT_zhengqing\maven\repository-zhengqing</localRepository>
 ```
 # 配置代理服务
+
+大多数公司组织考虑到安全或者一些其他因素，不允许他们的设备直接接入互联网。就是用到了代理服务器。配置如下
+在用户目录下的.m2 文件夹内setting.xml 中配置。
+在外部网络中关闭代理可以把<active>标签值设为false.
+如果不需要验证，可不设置用户密码
+nonProxyhosts 允许从特殊的位置直接接入你的网络。不需要这可以跳过。不需设置。多个用“|”分开。
+
 ```
 <!-- proxies
    | This is a list of proxies which can be used on this machine to connect to the network.
