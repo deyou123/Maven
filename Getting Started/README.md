@@ -19,7 +19,7 @@
 * scr \test\resources: This is for resource for the test 
 
 插件被放在系统的本地仓库里，一旦下载，再也不用重复下载，除非被删除。
-# 2. Building a simple project with maven ，
+# 2. Building a simple project with maven
  
 1. Open a command prompt and  run the follwoing command,changing the directly to the folder the project was create:
 
@@ -56,11 +56,12 @@ maven  配置
 ```
 # 配置代理服务
 
-大多数公司组织考虑到安全或者一些其他因素，不允许他们的设备直接接入互联网。就是用到了代理服务器。配置如下
-在用户目录下的.m2 文件夹内setting.xml 中配置。
-在外部网络中关闭代理可以把<active>标签值设为false.
-如果不需要验证，可不设置用户密码
-nonProxyhosts 允许从特殊的位置直接接入你的网络。不需要这可以跳过。不需设置。多个用“|”分开。
+大多数公司组织考虑到安全或者一些其他因素，不允许他们的设备直接接入互联网。就是用到了代理服务器。
+配置如下
+* 在用户目录下的.m2 文件夹内setting.xml 中配置。
+* 在外部网络中关闭代理可以把 active标签值设为false.
+* 如果不需要验证，可不设置用户密码
+nonProxyhosts 允许从指定位置直接接入你的网络，不需要设置可以跳过，多个地址可以用“|”分开。
 
 ```
 <!-- proxies
